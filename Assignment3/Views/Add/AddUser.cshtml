@@ -1,0 +1,17 @@
+﻿@model Assignment3.Models.User
+
+@using (Html.BeginForm("SaveUser", "Add"))
+{
+    <p>
+       UserName: @Html.TextBoxFor(user => user.UserName)
+    </p>
+
+    <p>
+        Password: @Html.PasswordFor(user => user.Password)
+    </p>
+
+    <input type="submit" value="Add User" />
+}
+
+
+
